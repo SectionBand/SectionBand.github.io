@@ -17,12 +17,17 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="/css/styles.css" rel="stylesheet" />
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
+    </script>
 </head>
 
 <body>
     <header>
         <h1 class="site-heading text-center text-faded d-none d-lg-block">
-            <img style="width: 480px; height: auto" src="/assets/img/section-banner.png" alt="Section Band" />
+            <img style="width: 40%; max-width: 480px; height: auto" src="/assets/img/section-banner.png" alt="Section Band" />
         </h1>
     </header>
     <!-- Navigation-->
@@ -48,9 +53,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <a href="/ViewerJS/#../fevkaladenin-fevkinde-gizlilikteki-akorlar/resources/221122-kerem.pdf">
-    </div>
+    <iframe src="/ViewerJS/#../fevkaladenin-fevkinde-gizlilikteki-akorlar/resources/221122-kerem.pdf" width="100%" allowfullscreen webkitallowfullscreen onload="resizeIframe(this)"></iframe>
     <footer class="footer text-faded text-center py-5">
         <div class="container">
             <p class="m-0 small">Copyright &copy; Section Band 2022</p>
